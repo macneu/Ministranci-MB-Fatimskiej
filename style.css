@@ -1,0 +1,209 @@
+body {
+    background-color: black;
+    
+}
+
+.title1 {
+    position:absolute;
+    top: 20%;
+    left: 10px;
+    height: 100%;
+    width: 99%; 
+    background-color: transparent;
+    font-size: 600%;
+    color: white;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    
+}
+
+.title2 {
+    position:absolute;
+    top: 36%;
+    left: 10px;
+    height: 100%;
+    width: 99%; 
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 400%;
+    color: white;
+    text-align: center;
+    font-weight: 900;
+}
+
+.navbar {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+hr {
+    color: white;
+    width: 100%;
+    height: 5px;
+    bottom: 10px;
+}
+
+.background {
+    width:100%;
+    max-height:1500px;
+    filter: brightness(40%);
+}
+
+.white {
+    background-color: white;
+}
+
+.navbutton {
+    background-color: transparent;
+    left: 20px;
+}
+
+
+button:hover, a:focus, a:active {
+    color: #999;
+    text-decoration: none;
+}
+
+button  {
+    position: relative;
+    display: block;
+    margin: 10px 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+    color: black;
+}
+button::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    transform-origin: right top;
+    transform: scale(0, 1);
+    transition: color 0.1s,transform 0.2s ease-out;
+}
+button:active::before {
+    background-color: black;
+}
+button:hover::before, button:focus::before {
+    transform-origin: left top;
+    transform: scale(1, 1);
+}
+
+.disable-selection {
+    -webkit-touch-callout: none;
+      -webkit-user-select: none; 
+       -khtml-user-select: none; 
+         -moz-user-select: none; 
+          -ms-user-select: none; 
+              user-select: none; 
+}
+
+.footer {
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    top: 165%;
+    background-color: whitesmoke;
+    height: 15%;
+}
+
+.foothr {
+    height: 4px;
+    background: black;
+    size: 5%;
+    border: 0px;
+}
+
+.foottxt {
+    top: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: 700;
+
+}
+
+.link {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.sep {
+    border-left: 3px solid black;
+    height: 25px;
+    padding-left: 2%;
+    margin-left: 3%;
+    margin-top: 2%;
+    float: left;
+}
+
+.head {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.line {
+    height: 2px;
+    background: black;
+    size: 5%;
+    border: 0px;
+    margin-left: 20px;
+    float: left;
+    width: 75%;
+    margin-top: 3%;
+}
+
+.header{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 200%;
+    font-weight: 800;
+    float: left;
+    margin-left: 4%;
+}
+
+.info1 {
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 75%;
+}
+
+.info {
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 75%;
+}
+
+.infotitle {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 130%;
+}
+
+.infotxt {
+    margin-top: 1%;
+    margin-left: 10%;
+    margin-right: 5%;
+    width: 60%;
+}
+
+.endline {
+    height: 2px;
+    background: black;
+    size: 5%;
+    border: 0px;
+    margin-left: 9%;
+    float: left;
+    width: 80%;
+    margin-top: 5%;
+}
+
