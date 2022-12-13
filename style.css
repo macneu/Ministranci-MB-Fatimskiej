@@ -113,7 +113,7 @@ button:hover::before, button:focus::before {
     width: 100%;
     top: 165%;
     background-color: whitesmoke;
-    height: 15%;
+    height: 20%;
 }
 
 .foothr {
