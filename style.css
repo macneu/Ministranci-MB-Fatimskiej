@@ -4,6 +4,33 @@
         
     }
 
+    .navigation2 {
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .fb {
+        height: 60px;
+        width: 90px;
+        float: right;
+    }
+
+    .yt {
+        height: 65px;
+        width: 70px;
+        float: right;
+    }
+
+    .mb_fat {
+        height: 60px;
+        width: 90px;
+        float: right;
+        margin: 2%;
+    }
+
     .title1 {
         position:absolute;
         top: 20%;
@@ -38,6 +65,14 @@
         padding-top: 20px;
         padding-left: 10px;
         padding-right: 10px;
+    }
+
+    .content{
+        position:absolute;
+        top: 90%;
+        height: 90%;
+        width: 100%; 
+        background-color: white;
     }
 
 
@@ -210,24 +245,127 @@
 }
 
 @media screen and (max-width: 600px) {
+
+    .mb_fat {
+        height: 45px;
+        width: 60px;
+        float: right;
+        margin: 2%;
+    }
+
+    .bdg{
+        background-color: white;
+        position: relative;
+        width: 100%;
+    }
+
+    .fb {
+        height: 30px;
+        width: 70px;
+        float: right;
+        position: absolute;
+        left: 500%;
+    }
+
+    .yt {
+        height: 35px;
+        width: 38px;
+        float: right;
+        position: absolute;
+        left: 650%;
+        bottom: 2px;
+    }
     
     .logo {
         display: none;  
     }
+
+    .logo2 {
+        top: 10px;
+        left: 10%;
+        z-index: 10;
+        position: fixed;
+        padding-top: 5px;
+        padding-right: 10px;
+    }
+
+    .navigation1 {
+        display: none;
+    }
+
+    .navigation2 {
+        position:fixed;
+        top: 10px;
+        left: 10px;
+        height: 10%;
+        width: 94%;
+        z-index: 5;
+    }
+
+    .container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      
+      .bar1, .bar2, .bar3 {
+        width: 30px;;
+        height: 4px;
+        background-color: #333;
+        margin: 4px 0;
+        transition: 0.4s;
+      }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.4);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        text-align:center;
+      }
+      
+    .sidenav a {
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #818181;
+        display: block;
+        transition: 0.3s;
+        opacity: 150%;
+      }
+      
+    .sidenav a:hover{
+        color: #f1f1f1;
+      }
+      
+    .sidenav .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 50px;
+        margin-left: 50px;
+        color: white;
+    }
     
     body {
-        background-color: black;
-        
+        background-color: white;
+        max-width: 50%;
+        height: auto;
     }
 
     .title1 {
         position:absolute;
-        top: 20%;
-        left: 10px;
+        top: 6%;
+        left: 5px;
         height: 100%;
         width: 99%; 
         background-color: transparent;
-        font-size: 600%;
+        font-size: 270%;
         color: white;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
@@ -237,13 +375,13 @@
 
     .title2 {
         position:absolute;
-        top: 36%;
-        left: 10px;
+        top: 17%;
+        left: 5px;
         height: 100%;
         width: 99%; 
         background-color: transparent;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 400%;
+        font-size: 170%;
         color: white;
         text-align: center;
         font-weight: 900;
@@ -256,6 +394,14 @@
         padding-right: 10px;
     }
 
+    .content{
+        position:static;
+        height: auto;
+        padding-bottom: 40%;
+        width: 200%; 
+        background-color: white;
+    }
+
 
     hr {
         color: white;
@@ -265,9 +411,9 @@
     }
 
     .background {
-        max-width: auto;
-        max-height:1500px;
+        width: 200%;
         filter: brightness(40%);
+        background-color: black;
     }
 
     .white {
@@ -275,8 +421,10 @@
     }
 
     .navbutton {
-        background-color: transparent;
-        left: 20px;
+        background: black;
+        width: 92%;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 800;
     }
 
 
@@ -325,12 +473,10 @@
     }
 
     .footer {
-        z-index: 5;
-        position: absolute;
-        width: 100%;
-        top: 165%;
+        position:static;
+        height: auto;
+        width: 200%; 
         background-color: whitesmoke;
-        height: 20%;
     }
 
     .foothr {
@@ -343,7 +489,7 @@
     .foottxt {
         top: 10px;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 150%;
+        font-size: 80%;
         font-weight: 700;
 
     }
@@ -357,7 +503,7 @@
         border-left: 3px solid black;
         height: 25px;
         padding-left: 2%;
-        margin-left: 2%;
+        margin-left: 6%;
         margin-top: 2%;
         float: left;
     }
@@ -403,7 +549,7 @@
 
     .infotitle {
         font-family: 'Times New Roman', Times, serif;
-        font-size: 130%;
+        font-size: 100%;
     }
 
     .infotxt {
