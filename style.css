@@ -221,9 +221,9 @@
         top: 20%;
         left: 10px;
         height: 100%;
-        width: 99%; 
+        width: 50%; 
         background-color: transparent;
-        font-size: 600%;
+        font-size: 300%;
         color: white;
         text-align: center;
         font-family: 'Times New Roman', Times, serif;
@@ -236,10 +236,10 @@
         top: 36%;
         left: 10px;
         height: 100%;
-        width: 99%; 
+        width: 50%; 
         background-color: transparent;
         font-family: 'Times New Roman', Times, serif;
-        font-size: 400%;
+        font-size: 200%;
         color: white;
         text-align: center;
         font-weight: 900;
@@ -255,13 +255,13 @@
 
     hr {
         color: white;
-        width: 100%;
+        width: 50%;
         height: 5px;
         bottom: 10px;
     }
 
     .background {
-        width:100%;
+        width:50%;
         max-height:1500px;
         filter: brightness(40%);
     }
