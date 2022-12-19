@@ -22,3 +22,11 @@ function myFunction(id) {
       x.className = x.className.replace(" w3-show", "");
     }
 }
+
+function openSIDE() {
+  document.getElementById("navside").style.width="100%";
+}
+
+function closeSIDE() {
+  document.getElementById("navside").style.width="0%";
+}
