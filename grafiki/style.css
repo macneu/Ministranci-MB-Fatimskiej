@@ -168,6 +168,10 @@
 }
 
 @media screen and (max-width: 600px) {
+    body {
+        height: auto;
+    }
+
     #menu__toggle {
         opacity: 0;
       }
@@ -276,7 +280,7 @@
     }
 
     .logo2 {
-        top: 10px;
+        top: 8px;
         left: 10%;
         z-index: 10;
         position: fixed;
@@ -290,9 +294,9 @@
 
     .navigation2 {
         position:fixed;
-        top: -3.5%;
+        top: -5%;
         left: 10px;
-        height: 10%;
+        height: 12%;
         width: 94%;
         z-index: 5;
         background-color: rgba(0, 0, 0, 0.4);
