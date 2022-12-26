@@ -1,125 +1,422 @@
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 100%;
+@media screen and (min-width: 1000px) {
+
+    .navigation2 {
+        display: none;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .fb {
+        height: 60px;
+        width: 90px;
+        float: right;
+    }
+
+    .yt {
+        height: 65px;
+        width: 70px;
+        float: right;
+    }
+
+    .mb_fat {
+        height: 60px;
+        width: 90px;
+        float: right;
+        left: 2%;
+        bottom: 5%;
+    }
+
+    p {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 100%;
+    }
+
+    .w3-card-2 {
+        padding: 2%;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .navbar {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main {
+        position: static;
+        margin: 5%;
+        border-width:2%;
+        border-style: solid;
+        border-color: black;
+        border-radius: 1m;
+        padding: 3%;
+    }
+
+    .tab {
+        width: 40%;
+    }
+
+    .txt {
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 200%;
+        font:bold;
+        padding: 1%;
+        text-align: center;
+    }
+
+    .in_txt {
+        font-family:Arial, Helvetica, sans-serif ;
+        font-size: 100%;
+        padding: 2%;
+        text-align: left;
+    }
+
+    .msc {
+        margin-left: 5%;
+        padding-left: 3%;
+        width: 70%;
+        margin-top: 1%;
+        padding: 1%
+    }
+
+    .title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 200%;
+        font-weight: 800;
+    }
+
+    .chos {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 120%;
+        font-weight: 700;
+    }
+
+    hr {
+        color: white;
+        width: 100%;
+        height: 5px;
+        bottom: 10px;
+    }
+
+    .background {
+        width:100%;
+        max-height:1500px;
+        filter: brightness(50%);
+    }
+
+    .white {
+        background-color: white;
+    }
+
+    .navbutton {
+        background-color: transparent;
+        left: 20px;
+    }
+
+    button:hover, a:focus, a:active {
+        color: black;
+        text-decoration: none;
+    }
+
+    button  {
+        position: relative;
+        display: block;
+        margin: 10px 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+        color: black;
+    }
+    button::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        transform-origin: right top;
+        transform: scale(0, 1);
+        transition: color 0.1s,transform 0.2s ease-out;
+    }
+    button:active::before {
+        background-color: black;
+    }
+    button:hover::before, button:focus::before {
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
 }
 
-.w3-card-2 {
-    padding: 2%;
-}
+@media screen and (max-width: 600px) {
 
-body {
-    background-color: white;
-}
+    #menu__toggle {
+        opacity: 0;
+      }
+      #menu__toggle:checked + .menu__btn > span {
+        transform: rotate(45deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::before {
+        top: 0;
+        transform: rotate(0deg);
+      }
+      #menu__toggle:checked + .menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+      #menu__toggle:checked ~ .menu__box {
+        left: 0 !important;
+      }
+      .menu__btn {
+        position: fixed;
+        top: 3.5%;
+        left: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+      }
+      .menu__btn > span,
+      .menu__btn > span::before,
+      .menu__btn > span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background-color: black;
+        transition-duration: .25s;
+      }
+      .menu__btn > span::before {
+        content: '';
+        top: -8px;
+      }
+      .menu__btn > span::after {
+        content: '';
+        top: 8px;
+      }
+      .menu__box {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color:  rgba(255, 250, 250, 0.9);
+        transition-duration: .25s;
+      }
+      .menu__item {
+        display: block;
+        padding: 12px 24px;
+        color: black;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 200%;
+        font-weight: 800;
+        text-decoration: none;
+        transition-duration: .25s;
+      }
+      .menu__item:hover {
+        background-color: black;
+        }
 
-.navbar {
-    padding-bottom: 20px;
-    padding-top: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
+    .mb_fat {
+        height: 45px;
+        width: 60px;
+        float: right;
+        margin: 2%;
+    }
 
-.main {
-    margin: 5%;
-    border-width:2%;
-    border-style: solid;
-    border-color: black;
-    border-radius: 2%;
-    padding: 3%;
-}
+    .bdg{
+        background-color: white;
+        position: relative;
+        width: 100%;
+    }
 
-.tab {
-    width: 40%;
-}
+    .fb {
+        height: 30px;
+        width: 70px;
+        float: right;
+        position: absolute;
+        left: 950%;
+        top: 20%;
+    }
 
-.txt {
-    text-transform: uppercase;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
-    font:bold;
-    padding: 1%;
-    text-align: center;
-}
+    .yt {
+        height: 35px;
+        width: 38px;
+        float: right;
+        position: absolute;
+        left: 1200%;
+        top: 15%;
+        bottom: 2px;
+    }
+    
+    .logo {
+        display: none;  
+    }
 
-.in_txt {
-    font-family:Arial, Helvetica, sans-serif ;
-    font-size: 100%;
-    padding: 2%;
-    text-align: left;
-}
+    .logo2 {
+        top: 8px;
+        left: 10%;
+        z-index: 10;
+        position: fixed;
+        padding-top: 5px;
+        padding-right: 10px;
+    }
 
-.msc {
-    margin-left: 5%;
-    padding-left: 3%;
-    width: 70%;
-    margin-top: 1%;
-    padding: 1%
-}
+    .navigation1 {
+        display: none;
+    }
 
-.title {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 200%;
-    font-weight: 800;
-}
+    .navigation2 {
+        position:fixed;
+        top: -5%;
+        left: 10px;
+        height: 12%;
+        width: 94%;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 
-.chos {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 120%;
-    font-weight: 700;
-}
+    body {
+        background-color: white;
+        max-width: 50%;
+        padding-top: 20%;
+    }
 
-hr {
-    color: white;
-    width: 100%;
-    height: 5px;
-    bottom: 10px;
-}
+    .navbar {
+        padding-bottom: 20px;
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 
-.background {
-    width:100%;
-    max-height:1500px;
-    filter: brightness(50%);
-}
+    .navbutton {
+        background-color: transparent;
+        left: 20px;
+    }
 
-.white {
-    background-color: white;
-}
+    .main {
+        position: static;
+        margin: 1%;
+        border-width:2%;
+        border-style: solid;
+        border-color: black;
+        border-radius: 1m;
+        padding: 1%;
+        width: 198%;
+    }
 
-.navbutton {
-    background-color: transparent;
-    left: 20px;
-}
+    .tab {
+        width: 100%;
+    }
 
-button:hover, a:focus, a:active {
-    color: black;
-    text-decoration: none;
-}
+    .city {
+        padding: 0;
+    }
 
-button  {
-    position: relative;
-    display: block;
-    margin: 10px 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
-    color: black;
-}
-button::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 5px;
-    left: 0;
-    height: 3px;
-    width: 100%;
-    background-color: black;
-    transform-origin: right top;
-    transform: scale(0, 1);
-    transition: color 0.1s,transform 0.2s ease-out;
-}
-button:active::before {
-    background-color: black;
-}
-button:hover::before, button:focus::before {
-    transform-origin: left top;
-    transform: scale(1, 1);
+    .txt {
+        text-transform: uppercase;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 140%;
+        font:bold;
+        padding: 2%;
+        text-align: center;
+    }
+
+    .in_txt {
+        font-family:Arial, Helvetica, sans-serif ;
+        font-size: 80%;
+        padding: 2%;
+        text-align: left;
+    }
+
+    .msc {
+        position: relative;
+        top: 10%;
+        width: 120%;
+        font-size: 80%;
+        padding: 2%;
+        background-color: whitesmoke;
+    }
+
+    .title {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 200%;
+        font-weight: 800;
+    }
+
+    .chos {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 120%;
+        font-weight: 700;
+    }
+
+    hr {
+        color: white;
+        width: 100%;
+        height: 5px;
+        bottom: 10px;
+    }
+
+    .background {
+        width:100%;
+        max-height:1500px;
+        filter: brightness(50%);
+    }
+
+    .white {
+        background-color: white;
+    }
+
+    .navbutton {
+        background-color: transparent;
+        left: 20px;
+    }
+
+    button:hover, a:focus, a:active {
+        color: black;
+        text-decoration: none;
+    }
+
+    button  {
+        position: relative;
+        display: block;
+        margin: 10px 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: color 0.1s,background-color 0.1s,padding 0.2s ease-in;
+        color: black;
+    }
+    button::before {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        transform-origin: right top;
+        transform: scale(0, 1);
+        transition: color 0.1s,transform 0.2s ease-out;
+    }
+    button:active::before {
+        background-color: black;
+    }
+    button:hover::before, button:focus::before {
+        transform-origin: left top;
+        transform: scale(1, 1);
+    }
+
 }
